@@ -16,17 +16,17 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
+import sphinx_bootstrap_theme
 # -- Project information -----------------------------------------------------
 
-project = 'OMG'
-copyright = '2018, Michael&Tracy'
-author = 'Michael&Tracy'
+project = 'Oh My Genes'
+copyright = '2018, michael-tracy'
+author = 'michael-tracy'
 
 # The short X.Y version
-version = ''
+version = '1.0'
 # The full version, including alpha/beta/rc tags
-release = 'v1.0'
+release = '1.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -74,7 +74,8 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'bootstrap'
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -101,7 +102,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'OMGdoc'
+htmlhelp_basename = 'OhMyGenesdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -128,8 +129,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'OMG.tex', 'OMG Documentation',
-     'Michael\\&Tracy', 'manual'),
+    (master_doc, 'OhMyGenes.tex', 'Oh My Genes Documentation',
+     'Michael-Tracy', 'manual'),
 ]
 
 
@@ -138,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'omg', 'OMG Documentation',
+    (master_doc, 'ohmygenes', 'Oh My Genes Documentation',
      [author], 1)
 ]
 
@@ -149,7 +150,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'OMG', 'OMG Documentation',
-     author, 'OMG', 'One line description of project.',
+    (master_doc, 'OhMyGenes', 'Oh My Genes Documentation',
+     author, 'OhMyGenes', 'One line description of project.',
      'Miscellaneous'),
 ]
