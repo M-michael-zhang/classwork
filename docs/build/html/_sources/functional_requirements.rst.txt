@@ -1,5 +1,15 @@
-table:
-______
+Functional Requirements:
+========================
+
+
+Input:
+------
+    A valid submitted gene expression file has the following format. It is a TAB-delimited,
+    plain text file with three columns (see the attached file for a fullexample). The file
+    contains an optional head line, followed by each gene's expression in a control sample
+    (e.g. ControlSample) and in a treatment sample (e.g. KnockOutSample).
+    gene_id ControlSample KnockOutSample
+
 +-------------+-------------+-------------+
 | gene_id     |controlsample|knowOutsample|
 +=============+=============+=============+
@@ -28,12 +38,21 @@ ______
 | AT1G01110   | 2.709783491 | 1.425313279 |
 +-------------+-------------+-------------+
 
+Output:
+-------
+    The web application displays a table and a scatter plot given a gene expression file.
+    The table contains a list of differentially expressed genes with the following format:
+
 ===========  ================  ================  ===========
   gene_id     control_sample     treat_sample      log_2[FC]
 ===========  ================  ================  ===========
  AT1G01010      1.198558083       2.036161827        0.76
 ===========  ================  ================  ===========
 
+    The scatter plot displays differentially expressed genes. The X-axis is Control, and
+    Y-axis is Treatment.
+    Replace 'Control' and 'Treatment' with appropriated column names if provided in the
+    uploaded file. The up-regulated genes are shown in red dots, and down-regulated genes
+    are shown in blue.
 
-
-
+.. image:: /image/2.jpg

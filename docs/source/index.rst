@@ -8,11 +8,21 @@ Welcome to OMG's documentation!
     :numbered:
 
 
-    number
     introduction
-
+    functional_requirements
+    non-functional_requirements
+    constraints
+    tentative_timeline
+    change_case
+    appendices
 
 Group Information
 =================
 
-Group Name:
+=============   ===============  ==================  ==========
+Name              ChineseName       email             GroupName
+Michael             张阳          499887880@qq.com        ppp
+
+Tracy               王颖          593966514@qq.com        ppp
+
+=============   ===============  ==================  ==========

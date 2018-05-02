@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; Oh My Genes V1.0 documentation</title>
+  <title>3. Non-Functional Requirements: &mdash; Oh My Genes V1.0 documentation</title>
   
 
   
@@ -28,8 +27,10 @@
   
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="index" title="Index" href="#" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. Constraints:" href="constraints.html" />
+    <link rel="prev" title="2. Functional Requirements:" href="functional_requirements.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -82,10 +83,17 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functional_requirements.html">2. Functional Requirements:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="non-functional_requirements.html">3. Non-Functional Requirements:</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Non-Functional Requirements:</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#response-time">3.1. Response Time:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ui-design">3.2. UI Design:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#maintain">3.3. Maintain:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#confidentiality-policy">3.4. Confidentiality Policy:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#robustness">3.5. Robustness:</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="constraints.html">4. Constraints:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tentative_timeline.html">5. Tentative timeline:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="change_case.html">6. Change Case:</a></li>
@@ -135,12 +143,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Index</li>
+      <li>3. Non-Functional Requirements:</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/non-functional_requirements.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -152,11 +162,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="non-functional-requirements">
+<h1>3. Non-Functional Requirements:<a class="headerlink" href="#non-functional-requirements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="response-time">
+<h2>3.1. Response Time:<a class="headerlink" href="#response-time" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>When the data is small and the response time is short, however, when it comes to thousands
+of data, it may be different. We need the response time is less than 5 seconds.</div></blockquote>
+</div>
+<div class="section" id="ui-design">
+<h2>3.2. UI Design:<a class="headerlink" href="#ui-design" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>The web application only need simple pages, not too many functions, and the traditional
+UI design is not satisfactory. We decide that the UI design needs to use the bootstrap framework.</div></blockquote>
+</div>
+<div class="section" id="maintain">
+<h2>3.3. Maintain:<a class="headerlink" href="#maintain" title="Permalink to this headline">¶</a></h2>
+<p>In the application, we provide telephone and email to contact the maintenance staff,
+and there are special maintenance workers to check the system every week to ensure
+the normal operation of the system.</p>
+</div>
+<div class="section" id="confidentiality-policy">
+<h2>3.4. Confidentiality Policy:<a class="headerlink" href="#confidentiality-policy" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>In order to ensure the security of the data, a special web security engineer will
+conduct the system security analysis after the design of the system to ensure that
+the data will not be stolen. In the process of normal use, the experimental data
+will not be divulged without the agreement of the owner.</div></blockquote>
+</div>
+<div class="section" id="robustness">
+<h2>3.5. Robustness:<a class="headerlink" href="#robustness" title="Permalink to this headline">¶</a></h2>
+<p>The system can automatically adjust or terminate when the server disk is damaged, the
+memory footprint is too large, the network overload or malicious attack, etc., causes
+the system to be wrong.</p>
+</div>
 </div>
 
 
@@ -164,6 +203,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="constraints.html" class="btn btn-neutral float-right" title="4. Constraints:" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="functional_requirements.html" class="btn btn-neutral" title="2. Functional Requirements:" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
